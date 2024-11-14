@@ -8,7 +8,7 @@ from .errores import (
 
 class ReglaCifrado(ABC):
     def __init__(self, token: int):
-        self.token = to2ken
+        self.token = token
 
     @abstractmethod
     def encriptar(self, mensaje: str) -> str:
